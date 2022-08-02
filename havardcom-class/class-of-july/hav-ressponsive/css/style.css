@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size:65.2%;
+}
+body{
+    font-family: cursive;
+}
+.nav{
+    width: 100%;
+    height: 10vh;
+    background-color: #000000d9;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-left: 30px;
+    font-size: 20px;
+}
+.bars{
+    display: none;
+}
+.fa-bars{
+    font-size: 25px;
+    color: #f94008;
+    margin: 20px;
+    display: none;
+}
+.link-list{
+    display: flex;
+    width: 30%;
+    justify-content:space-between;
+    margin: 50px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 200;
+}
+.link-list a{
+    color: #f94008;
+    text-decoration: none;
+}
+.link-list li:hover{
+    color: white;
+    transform: scale(1.2);
+}
+.link-list a:hover{
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(#000000b8,#000000cc), url(../img/pexels-drew-williams-2657669.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.header-content{
+    width: 60%;
+    text-align: center;
+    height:420px;
+    font-size: 22px;
+    line-height:40px;
+}
+.header-content h1{
+    margin-bottom: 20px;
+    color: #f94008;
+}
+.header-content p{
+    margin-bottom: 20px;
+    color: #f5f5f5b9;
+}
+#view-courses{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #f94008;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+#view-courses:hover{
+    color: black;
+    transform: scale(1.1);
+}
+#view-courses:active{
+    transform: scale(1);
+}
+.main{
+    width: 100%;
+    min-height: 80vh;
+    background-color: #161616af;
+}
+.section1{
+    width: 100%;
+    min-height: 60vh;
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+.section1 h1{
+    text-align: center;
+    padding-top:30px;
+    font-size:22px;
+    color: #f94008;
+}
+.course-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    flex-wrap: wrap;
+}
+.course-box{
+    margin-top: 20px;
+    width: 20%;
+    min-height: 350px;
+    box-shadow: #11111a1a 0px 4px 16px, #22222f3f 0px 8px 24px, #11111a40 0px 16px 56px;
+    border-radius: 30px;
+}
+.course-box img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.course-box p{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+}
+.course-box button{
+    margin-left:30%;
+    margin-top:5px;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #f94008;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.section2{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section2 h1{
+    text-align: center;
+    padding-bottom:30px;
+    font-size:22px;
+    color: #f94008;
+}
+.section2-service{
+    width: 70%;
+    min-height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #94949485;
+    border-radius: 30px;
+}
+.service-list{
+    line-height: 40px;
+    font-size: 18px;
+}
+.service-list li{
+    color: black;
+}
+.footer{
+    width: 100%;
+    min-height: 40vh;
+    background-color: #000000d9;
+    display: flex;
+}
+.box1{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box1 h1{
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.box1 p{
+    font-size: 18px;
+}
+.icon-box{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 40px;
+}
+.icon i{
+    font-size: 22px;
+}
+.box2,.box3,.box4{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+}
+.box2 h1,.box3 h1{
+    font-size: 22px;
+}
+.location i{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-right: 15px;
+}
+.location span{
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: 200;
+}
+.box3 ul{
+    list-style: none;
+}
+.box3 ul li{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.box4 h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.box4 p{
+    font-size: 18px;
+}
+.box4 input{
+    outline: none;
+    border: none;
+    height: 30px;
+    padding: 20px;
+    font-size: 18px;
+}
+#send{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #f94008;
+    color: #000;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.footer h1{
+    color: #f94008;
+}
+.footer p{
+    color: #ffffffc1;
+}
+.footer i{
+    color: #f94008;
+}
+.footer span,li{
+    color: #ffffffc1;
+}
+
+
+
+@media (max-width:600px){
+    .link-list{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    .header{
+        min-height: 60vh;
+    }
+    .header-content{
+        width: 80%;
+        min-height: 50%;
+    }
+    .header-content h1{
+        font-size: 25px;
+    }
+    .header-content p{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    #view-courses{
+        width:120px;
+        font-size: 15px;
+        color: black;
+    }
+    #view-courses:hover{
+        transform: scale(1);
+        color: white;
+        background-color:#f94008b6;
+    }
+    .main{
+        width: 100%;
+        min-height:80vh;
+    }
+    .section1{
+        background-color: #fff;
+        min-height: 190vh;
+        margin-bottom: 20px;
+    }
+    .section1 h1{
+        margin-bottom: 20px;
+    }
+    .course-container{
+        display: block;
+        height: inherit;
+        width: 100%;
+        margin: auto;
+    }
+    .course-box{
+        width: 70%;
+        min-height: 350px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .course-box p{
+        font-size: 15px;
+    }
+    .course-box button{
+        margin-left: 22%;
+        margin-bottom: 20px;
+    }
+    .section2{
+        width: 100%;
+        min-height: 100vh;
+    }
+    .section2-service{
+        width: 80%;
+        padding: 50px;
+        min-height:85%;
+    }
+    .service-list li{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .footer{
+        display:block;
+        min-height:100vh;
+    }
+    .box1,.box2,.box3,.box4{
+        width: 80%;
+        padding-top: 40px;
+        margin: auto;
+    }
+}
