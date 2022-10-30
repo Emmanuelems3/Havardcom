@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    :root{
+        --main-color:#f72804d6;
+        --secondary-color:#0000ff85;
+        --rice: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
+
+
+
+p{
+    background: var(--secondary-color);
+}
+h1{
+    width: 400px;
+    height: 400px;
+    background-image:linear-gradient(to bottom right ,#009245,#FCEE21);
+    font-family:sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    box-shadow: var(--rice);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+

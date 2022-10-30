@@ -1,0 +1,24 @@
+h1{
+    color: bisque;
+    background-color: purple;
+}
+#text{
+    width: 400px;
+    font-size:20px;
+    /* background-color: black; */
+    /* color:wheat; */
+    /* padding-left:30px; */
+    margin:40px;
+    border: 2px solid purple;
+    border-radius:10px;
+}
+input{
+    /* outline-color:red; */
+    outline: none;
+    width: 400px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    background-color: #80808046;
+    border-bottom:2px solid blue;
+}
