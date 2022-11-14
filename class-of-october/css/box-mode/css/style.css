@@ -1,0 +1,35 @@
+p{
+    background-color: purple;
+    display:inline;
+    width: 20%;
+}
+/* p{
+    display: inline-block;
+} */
+#container{
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+}
+input{
+    width: 250px;
+    height: 40px;
+    background-color: #8080808c;
+    outline: none;
+    /* outline-color: red; */
+    border: none;
+    border-bottom:2px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 22px;
+}

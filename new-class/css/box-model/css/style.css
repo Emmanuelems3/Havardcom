@@ -1,0 +1,17 @@
+i{
+    width: 100px;
+    height: 30px;
+    background-color: red;
+}
+p{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+nav{
+    background-color: purple;
+    color: aliceblue;
+    /* display: inline; */
+    width: 200px;
+    display: inline-block;
+}

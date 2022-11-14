@@ -29,15 +29,34 @@ const students = mongoose.Schema({
 const student = mongoose.model('student', students)
 
 app.post('/createStudentForm', (req,res)=>{
-    console.log(req.body)
+    const newStudentForm = new student(req.body)
+    newStudentForm.save()
+    .then(()=>{
+        res.json({message:'New student saved'})
+        console.log(newStudentForm)
+    })
+    .catch(err => console.log(err))
 })
 
-
-
-app.get('/test', (req, res)=>{
-    res.json({message:'Hello you have successfully reached the backend'});
+app.get('/fetchStudentInfo', (req,res)=>{
+    student.find({})
+    .then(student =>{
+        res.json(student)
+        console.log(student)
+    })
+    .catch(err => console.log(err))
 })
 
+app.post('/deleteStudent/:id', (req,res)=>{
+    console.log(req.params.id)
+    student.findByIdAndDelete(req.params.id)
+    .then(()=>{
+        res.json({message:'student deleted from database successfully'})
+    })
+    .catch(err =>{
+        console.log(err)
+    })
+})
 
 //route rout
 app.get('*', (req,res)=>{
