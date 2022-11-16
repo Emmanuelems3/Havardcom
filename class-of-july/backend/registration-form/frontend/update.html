@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box">
+                <h1 id="heading">EMS <br>Survey</h1>
+                <p id="sub-heading">Thanks for filling out this <br> survey</p>
+
+                <label for="">Firstname</label><br>
+                <input  type="text" placeholder="Enter your name" id="fname" required><br>
+
+                
+                <label id="red" for="">Surename</label><br>
+                <input type="text" placeholder="Enter your name" id="sname" required><br>
+
+                <label for="">Sex</label><br>
+                <input type="text" id="gender" placeholder='Enter the gender'>
+
+                <label for="">Email</label><br>
+                <input type="email" placeholder="Enter your email" id="email" required><br>
+
+                <label for="">Date of birth</label><br>
+                <input type="date" placeholder="Enter your dob" id="dob" required><br>
+
+                <label for="">State of origin</label><br>
+                <input type="text" placeholder="Enter your name" id="origin" required><br>
+
+                <label for="">Nationality</label><br>
+                <input type="text" placeholder="Enter your nationality" id="nationality" required><br>
+
+
+                <label for="">Religion</label><br>
+                <input type="text" placeholder="Enter your religion" id="religion" required><br>
+
+                <label for="">Other details</label><br>
+                <textarea name="" id="other-details" cols="60" rows="10" placeholder="Enter other details"></textarea><br>
+
+                <button id="submit" onclick="update()">update</button>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="./JS/update.js"></script>
+</body>
+</html>

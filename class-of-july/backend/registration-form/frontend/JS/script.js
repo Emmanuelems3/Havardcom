@@ -12,6 +12,7 @@ const form= document.querySelector('#form');
 const header= document.querySelector('.header');
 
 
+
 function createForm(){
     let info={
         firstname:fname.value,
@@ -39,3 +40,5 @@ function createForm(){
     .then(res=> console.log(res))
     .catch(err => console.log(err));
 }
+
+

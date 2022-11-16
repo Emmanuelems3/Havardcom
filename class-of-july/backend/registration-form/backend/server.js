@@ -42,7 +42,6 @@ app.get('/fetchStudentInfo', (req,res)=>{
     student.find({})
     .then(student =>{
         res.json(student)
-        console.log(student)
     })
     .catch(err => console.log(err))
 })
@@ -52,6 +51,18 @@ app.post('/deleteStudent/:id', (req,res)=>{
     student.findByIdAndDelete(req.params.id)
     .then(()=>{
         res.json({message:'student deleted from database successfully'})
+    })
+    .catch(err =>{
+        console.log(err)
+    })
+})
+
+
+app.post('/updateStudent/:id', (req,res)=>{
+    student.findByIdAndUpdate(req.params.id, req.body)
+    .then(()=>{
+        res.json({message:'student updated from database successfully'})
+        console.log('updated')
     })
     .catch(err =>{
         console.log(err)

@@ -24,3 +24,7 @@ body{
     margin-bottom: 30px;
     border-radius: 30px;
 }
+#update a{
+    color: white;
+    text-decoration: none;
+}
