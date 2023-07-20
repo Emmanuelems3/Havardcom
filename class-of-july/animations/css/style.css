@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+}
+
+.container{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+    /* this are animation properties listed below
+    all this properties have to be presiced in the element you want to add the animation 
+    in this case i wrote the properties in the container bec i want my container to be affected
+    all this properties are clearly explain in the notes you copied
+    note: write first the animation name before writing any other property 
+    the name can be anything  */
+
+    animation-name: light;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 5;
+    animation-direction: normal;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    z-index: 1;
+
+
+    animation-name: ems;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 5;
+    animation-direction: normal;
+}
+
+
+/* after you are done writing the properties , at the end of all your css code even after the media query 
+write the code below */
+
+/* after you write @keyframes write the name of the animation you gave in the container at the top 
+in this case "light" 
+
+folowed by different percentages ,which signifies each level in our animation . the percentages placed bellow must not be the same thing ,it can varie depending on what you want it to look like
+
+-Each level in the keyframe below have different colors and this will reflect on your webpage with the different colors*/
+
+
+@keyframes light{
+    0%{
+        background-color: #fff;
+    }
+    25%{
+        background-color: blue;
+    }
+    50%{
+        background-color: yellow;
+    }
+    75%{
+        background-color: black;
+    }
+    100%{
+        background-color: purple;
+    }
+}
+
+
+/* you can have as many keyframes as you want in your website just make sure the name matches the animation name you gave above
+in the case below i gave the name ems as in the .box above*/
+
+/* note:you can use any css propertie of your choice so far as you know what you want to design or do in warious stages */
+
+
+@keyframes ems{
+    0%{
+        background-color: orange;
+    }
+    25%{
+        background-color: purple;
+        border-radius: 10px;
+        transform: rotateX(90deg);
+        /* deg stands for (degree) */
+    }
+    50%{
+        background-color: magenta;
+        border-radius: 30px;
+        transform: skewX(45deg);
+        /* deg stands for (degree) */
+    }
+    75%{
+        background-color: #3a4d0e;
+        border-radius: 50%;
+        transform: skewY(45deg);
+        /* deg stands for (degree) */
+    }
+    100%{
+        background-color: #5a8000;
+        transform: scale(1.2);
+    }
+}

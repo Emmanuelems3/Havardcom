@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: white;
+    font-size: 30px;
+    background-color: #000;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+    margin: 20px;
+}
+#first{
+    font-size: 20px;
+}
+.sk{
+    background-color: red;
+    color:white;
+    font-size: 22px;
+}

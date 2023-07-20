@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height:40vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    /* here i give the height to my main because i know the exact size of my whole main */
+    width: 100%;
+    height: 100vh;
+    background-color: purple;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    width: 30%;
+    height: 300px;
+    margin-bottom: 10px;
+
+    /* this is how to link images from css */
+    background-image: url(../img/pexels-drew-williams-2657669.jpg);
+}
+.footer{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+}

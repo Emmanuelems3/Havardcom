@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000af;
+}
+.header{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00ff22af;
+}
+.main{
+    /* most of the time a height is not given to the main because it can contain so many sections */
+    width: 100%;
+}
+.sec1{
+    width: 100%;
+    height: 50vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec2{
+    width: 100%;
+    height: 70vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sec2 h1{
+    height: 10%;
+}
+.cont{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:nth-child(1){
+    background-color: darkgoldenrod;
+}
+.box:nth-child(2){
+    background-color: yellowgreen;
+}
+.box:nth-child(3){
+    background-color: orangered;
+}
+.box:nth-child(4){
+    background-color: indianred;
+}
+.sec3{
+    width: 100%;
+    height: 30vh;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+

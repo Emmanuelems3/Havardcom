@@ -1,0 +1,8 @@
+1.create a folder named assignment
+2. inside the folder create a file for each of the questions bellow.
+
+question1: using embeded styling write the biography of the president of nigeria . add an image to the file.
+
+question2: design a table with 4 rows and 4 columns add the fiels names sn,name,gender and age, then fillinformation under.
+
+question3: design a simple registration form making use of all the input types you know.
